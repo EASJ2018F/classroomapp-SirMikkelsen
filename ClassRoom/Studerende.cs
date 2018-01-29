@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 namespace ClassRoom
 {
    public class Studerende
-    {
-        public string Navn { get; set; }
-        public int Fødselsmåned { get; set; }
+   {
 
-        public int Fødselmåned { get; set; }
+       private string _navn;
+       private int _fødselsmåned;
+       private int _fødseldag;
 
-        public Studerende(string navn, int fødselsmåned, int fødselmåned)
-        {
-            Navn = navn;
-            Fødselsmåned = fødselsmåned;
-            Fødselmåned = fødselmåned;
-        }
+        public string Navn { get { return _navn; } }
+        public int Fødselsmåned { get { return _fødselsmåned; }}
+        public int Fødseldag { get { return _fødseldag; } }
+
+
+
+       
     }
 }
