@@ -24,6 +24,60 @@ namespace ClassRoom
            _fødseldag = fødseldag;
        }
 
-       
-    }
+
+       public override string ToString()
+       {
+           return $" Navn: {Navn} , Fødselsmåned: {Fødseldag}, Fødselsdag: {Fødseldag}";
+       }
+
+       public string Årstid()
+       {
+           switch (Fødselsmåned)
+           {
+                case 1:
+                    return ("Vinter");
+                    
+                case 2:
+                        return ("Vinter");
+                    
+                case 3:
+                    return ("Forår");
+                    
+                case 4:
+                    return ("Forår");
+                    
+               case 5:
+                   return ("Forår");
+                   
+               case 6:
+                   return ("Sommer");
+                   
+               case 7:
+                   return ("Sommer");
+                   
+               case 8:
+                   return ("Sommer");
+                   
+               case 9:
+                   return ("Efterår");
+                   
+               case 10:
+                   return ("Efterår");
+                  
+               case 11:
+                   return ("Efterår");
+                   
+               case 12:
+                   return ("Vinter");
+                  
+               default:
+                   return ("Ukendt");
+                   
+            }
+
+            
+
+
+       }
+   }
 }
