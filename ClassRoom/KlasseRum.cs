@@ -66,10 +66,10 @@ namespace ClassRoom
                 }
             }
 
-            Console.WriteLine("Efterår: " + efterår);
-            Console.WriteLine("Vinter " + vinter);
-            Console.WriteLine("Sommer: " + sommer);
-            Console.WriteLine("Forår: " + forår);
+            Console.WriteLine("Født i Efterår: " + efterår);
+            Console.WriteLine("Født i Vinter " + vinter);
+            Console.WriteLine("Født i Sommer: " + sommer);
+            Console.WriteLine("Født i Forår: " + forår);
 
         }
 
