@@ -13,9 +13,9 @@ namespace ClassRoom
        private int _fødselsmåned;
        private int _fødseldag;
 
-        public string Navn { get { return _navn; } }
-        public int Fødselsmåned { get { return _fødselsmåned; }}
-        public int Fødseldag { get { return _fødseldag; } }
+       public string Navn { get { return _navn; } }
+       public int Fødselsmåned { get { return _fødselsmåned; }}
+       public int Fødseldag { get { return _fødseldag; } }
 
        public Studerende(string navn, int fødselsmåned, int fødseldag)
        {
@@ -34,7 +34,6 @@ namespace ClassRoom
             _fødseldag = fødseldag;
 
        }
-
 
         public override string ToString()
        {
