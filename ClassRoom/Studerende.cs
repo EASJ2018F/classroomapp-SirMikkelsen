@@ -17,7 +17,12 @@ namespace ClassRoom
         public int Fødselsmåned { get { return _fødselsmåned; }}
         public int Fødseldag { get { return _fødseldag; } }
 
-
+       public Studerende(string navn, int fødselsmåned, int fødseldag)
+       {
+           _navn = navn;
+           _fødselsmåned = fødselsmåned;
+           _fødseldag = fødseldag;
+       }
 
        
     }
