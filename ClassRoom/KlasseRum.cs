@@ -13,10 +13,21 @@ namespace ClassRoom
         private DateTime _semesterStart;
 
 
-        
-        public string Klasse { get { return _klasse; }  }
-        public List<Studerende> Klassliste { get { return _klasseListe; }  }
-        public DateTime SemesterStart { get { return _semesterStart; } }
+
+        public string Klasse
+        {
+            get { return _klasse; }
+        }
+
+        public List<Studerende> Klassliste
+        {
+            get { return _klasseListe; }
+        }
+
+        public DateTime SemesterStart
+        {
+            get { return _semesterStart; }
+        }
 
 
         public KlasseRum(string klasse, List<Studerende> klasseListe, DateTime semesterStart)
@@ -25,5 +36,45 @@ namespace ClassRoom
             _klasseListe = klasseListe;
             _semesterStart = semesterStart;
         }
+
+
+
+        public void AntallFødseldagÅrstid()
+        {
+            int efterår = 0;
+            int vinter = 0;
+            int forår = 0;
+            int sommer = 0;
+
+            foreach (var student in _klasseListe)
+            {
+                if (student.Årstid() == "Efterår")
+                {
+                    efterår += 1;
+                }
+                if (student.Årstid() == "Vinter")
+                {
+                    vinter += 1;
+                }
+                if (student.Årstid() == "Sommer")
+                {
+                    sommer += 1;
+                }
+                if (student.Årstid() == "Forår")
+                {
+                    forår += 1;
+                }
+            }
+
+            Console.WriteLine("Efterår: " + efterår);
+            Console.WriteLine("Vinter " + vinter);
+            Console.WriteLine("Sommer: " + sommer);
+            Console.WriteLine("Forår: " + forår);
+
+        }
+
+
+       
+
     }
 }

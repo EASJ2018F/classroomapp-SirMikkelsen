@@ -22,10 +22,12 @@ namespace ClassRoom
            _navn = navn;
            _fødselsmåned = fødselsmåned;
            _fødseldag = fødseldag;
+
+
        }
 
 
-       public override string ToString()
+        public override string ToString()
        {
            return $" Navn: {Navn} , Fødselsmåned: {Fødseldag}, Fødselsdag: {Fødseldag}";
        }
